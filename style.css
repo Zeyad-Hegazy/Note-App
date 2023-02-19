@@ -1,0 +1,72 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.holeApp {
+	height: 100vh;
+	width: 100vw;
+	background-color: #222;
+	position: relative;
+	overflow: hidden;
+}
+
+.add-note {
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	background-color: #ffffffa5;
+	color: #222;
+	position: absolute;
+	font-size: 40px;
+	font-weight: bold;
+	right: 30px;
+	bottom: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+
+.add-note:hover {
+	content: "";
+	background-color: #808080a5;
+	transition: all 0.5s;
+}
+
+.clear {
+	position: absolute;
+	right: 30px;
+	top: 30px;
+	color: #222;
+	background-color: #ffffffa5;
+	padding: 5px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.note {
+	position: absolute;
+	height: 300px;
+	width: 250px;
+	left: 50px;
+	top: 50px;
+	background-color: #ffee58;
+	border-radius: 5px;
+}
+
+.noteContent {
+	background-color: transparent;
+	border: none;
+	outline: none;
+	height: 100%;
+	width: 100%;
+	resize: none;
+	padding: 20px;
+	font-size: 20px;
+}
